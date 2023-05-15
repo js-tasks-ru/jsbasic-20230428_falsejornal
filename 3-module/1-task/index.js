@@ -1,3 +1,8 @@
 function namify(users) {
-  // ваш код...
+  let join=[];
+  for (const nam of users)
+    {
+      join.push(nam.name)
+    };
+  return(join);
 }
