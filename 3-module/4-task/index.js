@@ -277,7 +277,7 @@ const users = [
 
 function showSalary(users, age) {
   return users
-    .filter((user)=>{return user.age <= age;})
-    .map((user)=>{return `\n${user.name}, ${user.balance}`})
+    .filter(user=> user.age <= age)
+    .map(user=>`\n${user.name}, ${user.balance}`)
     .join('').slice(1)
 }

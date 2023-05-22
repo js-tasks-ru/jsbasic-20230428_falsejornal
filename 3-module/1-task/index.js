@@ -1,8 +1,3 @@
 function namify(users) {
-  let join=[];
-  for (const nam of users)
-    {
-      join.push(nam.name)
-    };
-  return(join);
+  return users.map(nam => nam.name);
 }
